@@ -31,6 +31,10 @@ object {
 	border: 1px solid gray;
 }
 
+#project-container {
+	width: 99%;
+}
+
 .project {
 	border: 2px solid black;
 	border-radius: 10px;
@@ -42,11 +46,7 @@ object {
 	text-align: center;
 }
 
-.img-header {
-	height: 100px;
-}
-
+.img-header { height: 100px; }
 .description { text-align: left; margin-left: 10px; }
-
 .github-link { float: left; margin-left: 10px; }
 .demo-link { float: right; margin-right: 10px; }
