@@ -1,0 +1,53 @@
+body {
+	background-color: white;
+	height: 100%;
+}
+
+#content {
+	height: 90vh;
+	align-items: center;
+}
+
+h1 { padding-top: 10px; }
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+#footer-container { display: flex; }
+.half-width { width: 50%; margin: 0;}
+#copyright { text-align: left; padding-left: 4px; margin-top: 4px; font-size: 10pt;}
+
+#social { text-align: right; padding-right: 4px; font-size: 16pt; }
+#social li a { color: #666; }
+#social .linkedin a:hover{ color: #0077B5; transition: .5s; }
+#social .handshake a:hover{ color: #FECE41; transition: .5s; }
+#social .github a:hover{ color: black; transition: .5s; }
+
+object {
+	width: 100%;
+	height: 92vh;
+	border: 1px solid gray;
+}
+
+#project-container {
+	width: 99%;
+}
+
+.project {
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 4px;
+	padding-right: 6px;
+	overflow: hidden;
+	margin: 10px;
+	background-color: white;
+	text-align: center;
+    height: 400px;
+}
+
+.img-header { height: 100px; }
+.description { text-align: left; margin-left: 10px; }
+.github-link { float: left; margin-left: 10px; }
+.demo-link { float: right; margin-right: 10px; }
