@@ -17,27 +17,27 @@ type SectionType = {
 export default function Home() {
   const [section, setSection] = useState<number>(0);
   const homeRef = useRef<HTMLDivElement>(null);
-  const homeInView = useInView(homeRef, { amount: .5 });
   const aboutRef = useRef<HTMLDivElement>(null);
-  const aboutInView = useInView(aboutRef, { amount: .5 });
 
   const sections: Array<SectionType> = [
     {
       id: 'home',
       ref: homeRef,
-      inView: homeInView,
+      inView: useInView(homeRef, { amount: .8 }),
     },
     {
       id: 'about',
       ref: aboutRef,
-      inView: aboutInView,
+      inView: useInView(aboutRef, { amount: .8 }),
     },
   ];
 
   for (let i = 0; i < sections.length; i++) {
     useEffect(() => {
-      console.log(`${sections[i].id} status: ${sections[i].inView}`);
-      if (sections[i].inView) window.location.hash = `#${sections[i].id}`;
+      if (sections[i].inView) {
+        window.location.hash = `#${sections[i].id}`;
+        setSection(i);
+      }
     }, [sections[i].inView]);
   }
 
@@ -50,17 +50,17 @@ export default function Home() {
   }
 
   return (
-    <>
+    <div className="relative">
       <button onClick={handleNextSession} className="fixed z-100 w-[30px] h-[30px] p-2 flex items-center justify-center bottom-4 right-4 border rounded-full text-md hover:cursor-pointer transition hover:bg-gray-100 hover:text-black">
-        <FontAwesomeIcon icon={faArrowDown} />
+        <FontAwesomeIcon icon={faArrowDown} className={`${((section + 1 === sections.length)) ? 'rotate-180' : ''} transition-transform`} />
       </button>
       <div id="home" ref={homeRef} className="relative w-full h-screen flex items-center justify-center gap-x-16 gap-y-10 text-center sm:text-right flex-col sm:flex-row">
         <Title />
         <Mugshot />
       </div>
-      <div id="about" ref={aboutRef} className="relative w-full h-screen flex items-center justify-center gap-x-16 gap-y-10 text-center sm:text-right flex-col sm:flex-row">
+      <div id="about" ref={aboutRef} className="relative w-full sm:h-screen flex p-4 sm:p-16">
         <About />
       </div>
-    </>
+    </div>
   );
 }
