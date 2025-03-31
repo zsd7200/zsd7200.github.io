@@ -5,6 +5,11 @@
   --foreground: #171717;
 }
 
+::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -17,6 +22,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth !important;  
+  --scroll-behavior: smooth !important;
 }
 
 body {

@@ -4,6 +4,7 @@ import { useState, useRef, RefObject, useEffect } from 'react';
 import Mugshot from "@/components/home/Mugshot";
 import Title from "@/components/home/Title";
 import About from "@/components/home/About";
+import Projects from '@/components/home/Projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from "motion/react";
@@ -18,6 +19,7 @@ export default function Home() {
   const [section, setSection] = useState<number>(0);
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
+  const projRef = useRef<HTMLDivElement>(null);
 
   const sections: Array<SectionType> = [
     {
@@ -29,6 +31,11 @@ export default function Home() {
       id: 'about',
       ref: aboutRef,
       inView: useInView(aboutRef, { amount: .8 }),
+    },
+    {
+      id: 'projects',
+      ref: projRef,
+      inView: useInView(projRef, { amount: .8 }),
     },
   ];
 
@@ -60,6 +67,9 @@ export default function Home() {
       </div>
       <div id="about" ref={aboutRef} className="relative w-full sm:h-screen flex p-4 sm:p-16">
         <About />
+      </div>
+      <div id="projects" ref={projRef} className="relative w-full sm:h-screen flex p-4 sm:p-16">
+        <Projects />
       </div>
     </div>
   );
