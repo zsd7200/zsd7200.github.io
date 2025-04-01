@@ -16,7 +16,7 @@ export const aboutData: Array<AboutType> = [
   {
     title: 'Skills',
     short: 'skill',
-    className: 'ml-4 sm:ml-8 lg:ml-0',
+    className: 'ml-4 sm:ml-8 xl:ml-0',
     data: [
       {
         title: 'Languages',
@@ -47,7 +47,7 @@ export const aboutData: Array<AboutType> = [
   {
     title: 'Experience',
     short: 'exp',
-    className: 'mr-14 sm:mr-24 sm:mt-4 lg:mr-0 lg:mt-48',
+    className: 'mr-14 sm:mr-24 sm:mt-4 xl:mr-0 xl:mt-48',
     data: [
       {
         title: 'Web Developer',
@@ -66,7 +66,7 @@ export const aboutData: Array<AboutType> = [
   {
     title: 'Education',
     short: 'edu',
-    className: 'ml-16 sm:ml-24 sm:mt-4 lg:ml-0 lg:mt-16',
+    className: 'ml-16 sm:ml-24 sm:mt-4 xl:ml-0 xl:mt-16',
     data: [
       {
         title: 'University',

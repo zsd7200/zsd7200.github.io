@@ -27,11 +27,11 @@ export default function About() {
           duration: 0.7,
         }}
         viewport={{ once: true }}
-        className="mb-8 sm:mb-16"
+        className="mb-8 xl:mb-16"
       >
         <h1 className={`${manrope.className} text-4xl sm:text-5xl font-[700]`}>about me</h1>
       </motion.div>
-      <div className="flex justify-around items-center flex-col lg:flex-row lowercase" ref={containerRef}>
+      <div className="flex justify-around items-center flex-col xl:flex-row lowercase" ref={containerRef}>
         {aboutData.map((about) => 
           <div key={about.short} className={about.className}>
             <motion.div 
@@ -45,9 +45,10 @@ export default function About() {
             {circleState === 1 &&
               <div className={`
                 ${manrope.className} rounded-full bg-white text-black 
-                w-[70vw] h-[70vw] sm:w-[50vw] sm:h-[50vw] lg:w-[25vw] lg:h-[25vw] 
-                flex flex-col items-center justify-center
+                w-[80vw] h-[80vw] sm:w-[50vw] sm:h-[50vw] lg:w-[40vw] lg:h-[40vw] xl:w-[25vw] xl:h-[25vw] 
+                flex flex-col items-center justify-center relative
               `}>
+                <div className="w-full h-full flex flex-col items-center justify-center">
                 <motion.div
                   initial={{ originY: 'bottom', skewX: '30deg', rotateX: '-90deg' }}
                   animate={{ originY: 'bottom', skewX: '0deg', rotateX: '0deg' }}
@@ -62,7 +63,7 @@ export default function About() {
                   <h1 className="text-xl sm:text-3xl font-[600]">{about.title}</h1>
                   <hr className="w-[70%] mx-auto border-gray-200" />
                 </motion.div>
-                <div className="flex flex-col gap-y-3">
+                <div className="flex flex-col gap-y-3 min-w-[80%]">
                   {about.data.map((data) => 
                     <motion.div
                       initial={{ originY: 'bottom', skewX: '30deg', rotateX: '-90deg' }}
@@ -73,9 +74,10 @@ export default function About() {
                         duration: 0.7,
                       }}
                       viewport={{ once: true }}
-                      className="flex gap-x-4 justify-between w-[80%] mx-auto"
+                      className="flex gap-x-2 sm:gap-x-4 justify-between items-center w-[75%] sm:w-[80%] mx-auto"
+                      key={data.short}
                     >
-                      <p className="text-sm sm:text-base font-bold">{data.title}:</p>
+                      <p className="text-sm sm:text-base font-bold bg-white rounded-lg p-1">{data.title}:</p>
                       <div className="flex flex-col text-right text-pretty bg-white rounded-lg p-1">
                         <span className="text-sm sm:text-base">{data.data.join(', ')}</span>
                         {data.subdata && 
@@ -84,6 +86,7 @@ export default function About() {
                       </div>
                     </motion.div>
                   )}
+                  </div>
                 </div>
               </div>
             }

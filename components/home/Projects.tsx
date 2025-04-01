@@ -46,7 +46,7 @@ export default function Projects() {
       >
         <h1 className={`${manrope.className} text-4xl sm:text-5xl font-[700]`}>projects</h1>
       </motion.div>
-      <div className={`${manrope.className} flex justify-around items-stretch flex-col lg:flex-row gap-4 flex-wrap`}>
+      <div className={`${manrope.className} flex justify-around items-stretch flex-col xl:flex-row gap-4 flex-wrap`}>
         {projectData.map((proj, i) => (
           <motion.div 
             key={proj.short} 
@@ -59,8 +59,8 @@ export default function Projects() {
             viewport={{ once: true, amount: 0.5 }}
             className={
               `relative flex ${(i % 2) ? 'text-right flex-row-reverse' : 'text-left flex-row'} 
-              justify-between items-center gap-x-4 lg:text-left lg:flex-row bg-white text-black w-full 
-              lg:w-[30%] rounded-lg p-4 border border-white/5`
+              justify-between items-center gap-x-4 xl:text-left xl:flex-row bg-white text-black w-full 
+              xl:w-[30%] rounded-lg p-4 border border-white/5`
             }>
             <div>
               <h2 className="font-bold text-xl select-none">{proj.title}</h2>
@@ -104,7 +104,7 @@ export default function Projects() {
                 }
               </div>
             }
-            <div className={`absolute bottom-4 ${(i % 2) ? 'left-4' : 'right-4'} lg:left-[unset] lg:right-4 flex gap-x-2`}>
+            <div className={`absolute bottom-4 ${(i % 2) ? 'left-4' : 'right-4'} xl:left-[unset] xl:right-4 flex gap-x-2`}>
               {proj.github && 
                 <a href={proj.github} title="GitHub" className="transition text-lime-600 hover:text-lime-700"><FontAwesomeIcon icon={faGithub} /></a>
               }

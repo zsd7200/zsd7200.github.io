@@ -73,7 +73,7 @@ export default function Home() {
         <Title />
         <Mugshot />
       </div>
-      <div id="about" ref={aboutRef} className="relative w-full lg:h-screen flex p-4 sm:p-16">
+      <div id="about" ref={aboutRef} className="relative w-full xl:h-screen flex p-4 sm:p-16">
         <About />
       </div>
       <div id="projects" ref={projRef} className="relative w-full h-full flex p-4 sm:p-16">
