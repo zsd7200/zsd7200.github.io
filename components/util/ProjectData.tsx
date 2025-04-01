@@ -20,7 +20,7 @@ export const projectData: Array<ProjectType> = [
       A daily game (like <a className="underline transition text-lime-600 hover:text-lime-700" href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>) where the
       user has to guess a blurred Pokémon card. Card gets less blurry as user guesses. Gets card data from 
       the <a className="underline transition text-lime-600 hover:text-lime-700" href="https://pokemontcg.io/">Pokémon TCG API</a> and stores it in a MongoDB database for less calls
-      to an external API. Also uses MongoDB to store previous days' cards so users can play previous days.
+      to an external API. Also uses MongoDB to store previous days&apos; cards so users can play previous days.
       <br />
       Built using React/Next and Tailwind.
     </span>,
@@ -47,7 +47,7 @@ export const projectData: Array<ProjectType> = [
     title: "Who's that Pocket Monster?",
     short: 'who',
     description: <span>
-      A <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Who%27s_That_Pok%C3%A9mon%3F">"Who's that Pokémon?"</a> webgame. 
+      A <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Who%27s_That_Pok%C3%A9mon%3F">&quot;Who&apos;s that Pokémon?&quot;</a> webgame. 
       Pokémon images taken from <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a> using <a className="underline transition text-lime-600 hover:text-lime-700" href="https://pypi.org/project/ImageScraper/">ImageScraper</a> and
       manipulated using either Canvas (if on desktop) or CSS image filters (if on mobile). 
       <br/>
@@ -78,7 +78,7 @@ export const projectData: Array<ProjectType> = [
     short: 'packrip',
     description: <span>
       A Pokémon TCG pack opening simulator. Uses the <a className="underline transition text-lime-600 hover:text-lime-700" href="https://pokemontcg.io/">Pokémon TCG API</a> to
-      get card/set data, and pull rate data from various sources in an attempt to be accurate to each set's own pull rates.
+      get card/set data, and pull rate data from various sources in an attempt to be accurate to each set&apos;s own pull rates.
       <br />
       Built using Node.js, JavaScript with Babel and Gulp, and HTML/CSS with Handlebars and SASS.
       </span>,

@@ -33,7 +33,8 @@ export default function Mugshot() {
     }
   }
 
-  const getRandomBlurb = () => {
+  const getRandomBlurb = (id?: number) => {
+    if (id) return blurbs[id];
     return blurbs[Math.floor(Math.random() * blurbs.length)];
   }
 
@@ -101,7 +102,7 @@ export default function Mugshot() {
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.3}
         }}
       >
-        <Image src="/me.png" width={300} height={300} alt="photo of me" priority={true} />
+        <Image src="/me.png" width={300} height={300} alt="Photo of Me" priority={true} />
       </motion.div>
     </div>
   );

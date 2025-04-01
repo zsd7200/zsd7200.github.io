@@ -46,7 +46,7 @@ export default function Projects() {
       >
         <h1 className={`${manrope.className} text-4xl sm:text-5xl font-[700]`}>projects</h1>
       </motion.div>
-      <div className={`${manrope.className} flex justify-around items-stretch flex-col sm:flex-row gap-4 flex-wrap`}>
+      <div className={`${manrope.className} flex justify-around items-stretch flex-col lg:flex-row gap-4 flex-wrap`}>
         {projectData.map((proj, i) => (
           <motion.div 
             key={proj.short} 
@@ -59,22 +59,23 @@ export default function Projects() {
             viewport={{ once: true, amount: 0.5 }}
             className={
               `relative flex ${(i % 2) ? 'text-right flex-row-reverse' : 'text-left flex-row'} 
-              justify-between items-center gap-x-4 sm:text-left sm:flex-row bg-white text-black w-full 
-              sm:w-[30%] rounded-lg p-4 border border-white/5`
+              justify-between items-center gap-x-4 lg:text-left lg:flex-row bg-white text-black w-full 
+              lg:w-[30%] rounded-lg p-4 border border-white/5`
             }>
             <div>
               <h2 className="font-bold text-xl select-none">{proj.title}</h2>
               <p>{proj.description}</p>
             </div>
             {proj.image &&
-              <div className={`w-full min-w-24 sm:max-w-24 ${(proj.screenshot) ? 'hover:cursor-pointer' : ''}`}>
+              <div className={`flex justify-center w-full min-w-30 max-w-30 ${(proj.screenshot) ? 'hover:cursor-pointer' : ''}`}>
                 <Image
                   src={proj.image}
                   alt={`${proj.title} icon`}
                   title={`${(proj.screenshot) ? 'Click for Screenshot' : proj.title + ' icon'}`}
                   width={190}
                   height={100}
-                  onClick={(e) => { (proj.screenshot) ? openDialog(i) : undefined }}
+                  onClick={() => { return (proj.screenshot) ? openDialog(i) : undefined }}
+                  className="w-48"
                 />
                 {proj.screenshot && 
                   <AnimatePresence>
@@ -95,13 +96,15 @@ export default function Projects() {
                         title={`${proj.title} screenshot`}
                         width={1920}
                         height={1080}
+                        className="rounded-lg"
                       />
+                      <p className="py-2 text-center text-xs italic">{proj.title}</p>
                     </motion.dialog>
                   </AnimatePresence>
                 }
               </div>
             }
-            <div className={`absolute bottom-4 ${(i % 2) ? 'left-4' : 'right-4'} sm:left-[unset] sm:right-4 flex gap-x-2`}>
+            <div className={`absolute bottom-4 ${(i % 2) ? 'left-4' : 'right-4'} lg:left-[unset] lg:right-4 flex gap-x-2`}>
               {proj.github && 
                 <a href={proj.github} title="GitHub" className="transition text-lime-600 hover:text-lime-700"><FontAwesomeIcon icon={faGithub} /></a>
               }

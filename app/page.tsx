@@ -8,6 +8,7 @@ import Projects from '@/components/home/Projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { useInView } from "motion/react";
+import Links from '@/components/home/Links';
 
 type SectionType = {
   id: string,
@@ -20,6 +21,7 @@ export default function Home() {
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const projRef = useRef<HTMLDivElement>(null);
+  const linksRef = useRef<HTMLDivElement>(null);
 
   const sections: Array<SectionType> = [
     {
@@ -37,9 +39,15 @@ export default function Home() {
       ref: projRef,
       inView: useInView(projRef, { amount: .8 }),
     },
+    {
+      id: 'links',
+      ref: linksRef,
+      inView: useInView(linksRef, { amount: .8 }),
+    },
   ];
 
   for (let i = 0; i < sections.length; i++) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
       if (sections[i].inView) {
         window.location.hash = `#${sections[i].id}`;
@@ -65,11 +73,14 @@ export default function Home() {
         <Title />
         <Mugshot />
       </div>
-      <div id="about" ref={aboutRef} className="relative w-full sm:h-screen flex p-4 sm:p-16">
+      <div id="about" ref={aboutRef} className="relative w-full lg:h-screen flex p-4 sm:p-16">
         <About />
       </div>
-      <div id="projects" ref={projRef} className="relative w-full sm:h-screen flex p-4 sm:p-16">
+      <div id="projects" ref={projRef} className="relative w-full h-full flex p-4 sm:p-16">
         <Projects />
+      </div>
+      <div id="links" ref={linksRef} className="relative w-full lg:h-screen flex p-4 sm:p-16">
+        <Links />
       </div>
     </div>
   );

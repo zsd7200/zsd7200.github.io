@@ -30,8 +30,8 @@ export default function About() {
       >
         <h1 className={`${manrope.className} text-4xl sm:text-5xl font-[700]`}>about me</h1>
       </motion.div>
-      <div className="flex justify-around items-center flex-col sm:flex-row" ref={containerRef}>
-        <div className="ml-4 sm:ml-0">
+      <div className="flex justify-around items-center flex-col lg:flex-row" ref={containerRef}>
+        <div className="ml-4 sm:ml-8 lg:ml-0">
           <motion.div 
             initial={{ scale: 0 }}
             whileInView={{ scale: circleState }}
@@ -39,7 +39,7 @@ export default function About() {
               duration: 0.7,
             }}
             viewport={{ once: true }}
-            className={`${manrope.className} rounded-full bg-white text-black w-[70vw] h-[70vw] sm:w-[25vw] sm:h-[25vw] flex items-center justify-center`}
+            className={`${manrope.className} rounded-full bg-white text-black w-[70vw] h-[70vw] sm:w-[50vw] sm:h-[50vw] lg:w-[25vw] lg:h-[25vw] flex items-center justify-center`}
           >
           {circleState === 1 &&
             <div className="flex flex-col w-full px-4">
@@ -91,7 +91,7 @@ export default function About() {
           }
           </motion.div>
         </div>
-        <div className="mr-14 sm:mr-0 sm:mt-48">
+        <div className="mr-14 sm:mr-24 sm:mt-4 lg:mr-0 lg:mt-48">
         <motion.div 
             initial={{ scale: 0 }}
             whileInView={{ scale: circleState }}
@@ -99,7 +99,7 @@ export default function About() {
               duration: 0.7,
             }}
             viewport={{ once: true }}
-            className={`${manrope.className} rounded-full bg-white text-black w-[70vw] h-[70vw] sm:w-[25vw] sm:h-[25vw] flex items-center justify-center`}
+            className={`${manrope.className} rounded-full bg-white text-black w-[70vw] h-[70vw] sm:w-[50vw] sm:h-[50vw] lg:w-[25vw] lg:h-[25vw] flex items-center justify-center`}
           >
             {circleState === 1 &&
               <div className="flex flex-col w-full px-4">
@@ -157,7 +157,7 @@ export default function About() {
             }
           </motion.div>
         </div>
-        <div className="ml-16 sm:ml-0 sm:mt-16">
+        <div className="ml-16 sm:ml-24 sm:mt-4 lg:ml-0 lg:mt-16">
         <motion.div 
             initial={{ scale: 0 }}
             whileInView={{ scale: circleState }}
@@ -165,7 +165,7 @@ export default function About() {
               duration: 0.7,
             }}
             viewport={{ once: true }}
-            className={`${manrope.className} rounded-full bg-white text-black w-[70vw] h-[70vw] sm:w-[25vw] sm:h-[25vw] flex items-center justify-center`}
+            className={`${manrope.className} rounded-full bg-white text-black w-[70vw] h-[70vw] sm:w-[50vw] sm:h-[50vw] lg:w-[25vw] lg:h-[25vw] flex items-center justify-center`}
           >
             {circleState === 1 &&
               <div className="flex flex-col w-full px-4">
