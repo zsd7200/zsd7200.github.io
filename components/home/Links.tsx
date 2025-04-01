@@ -40,7 +40,7 @@ export default function Links() {
                 <span className="text-6xl pb-2">
                   <FontAwesomeIcon icon={link.icon ?? faLink} className="transition text-lime-600 group-hover:text-lime-700 w-full h-full" />
                 </span>
-                <span className="text-xs italic text-black">{link.name.toLowerCase()}</span>
+                <span className="text-xs italic text-black lowercase">{link.name}</span>
               </a>
             </motion.div>
           ))}
