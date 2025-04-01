@@ -10,7 +10,7 @@ type ProjectType = {
   demo?: string,
 }
 
-const basePath = '/portfolio';
+const basePath = '';
 
 export const projectData: Array<ProjectType> = [
   {

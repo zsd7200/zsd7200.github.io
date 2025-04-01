@@ -102,7 +102,7 @@ export default function Mugshot() {
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.3}
         }}
       >
-        <Image src="/portfolio/me.png" width={300} height={300} alt="Photo of Me" priority={true} />
+        <Image src="/me.png" width={300} height={300} alt="Photo of Me" priority={true} />
       </motion.div>
     </div>
   );
