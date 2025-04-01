@@ -10,10 +10,12 @@ type ProjectType = {
   demo?: string,
 }
 
+const basePath = '/portfolio';
+
 export const projectData: Array<ProjectType> = [
   {
-    image: "/proj/cardle.png",
-    screenshot: "/proj/screenshot/cardle.png",
+    image: basePath + "/proj/cardle.png",
+    screenshot: basePath + "/proj/screenshot/cardle.png",
     title: "Cardle",
     short: 'card',
     description: <span>
@@ -28,8 +30,8 @@ export const projectData: Array<ProjectType> = [
     demo: "https://cardle.wtf/",
   },
   {
-    image: "/proj/rcon.png",
-    screenshot: "/proj/screenshot/rcon.png",
+    image: basePath + "/proj/rcon.png",
+    screenshot: basePath + "/proj/screenshot/rcon.png",
     title: "RCON Web GUI",
     short: 'rcon',
     description: <span>
@@ -42,8 +44,8 @@ export const projectData: Array<ProjectType> = [
     github: "https://github.com/zsd7200/rcon",
   },
   {
-    image: "/proj/whosthat.png",
-    screenshot: "/proj/screenshot/whosthat.png",
+    image: basePath + "/proj/whosthat.png",
+    screenshot: basePath + "/proj/screenshot/whosthat.png",
     title: "Who's that Pocket Monster?",
     short: 'who',
     description: <span>
@@ -57,8 +59,8 @@ export const projectData: Array<ProjectType> = [
     demo: "https://whosthatpocket.monster/",
   },
   {
-    image: "/proj/bonesnode.png",
-    screenshot: "/proj/screenshot/bonesnode.png",
+    image: basePath + "/proj/bonesnode.png",
+    screenshot: basePath + "/proj/screenshot/bonesnode.png",
     title: "BonesNode",
     short: 'bones',
     description: <span>
@@ -72,8 +74,8 @@ export const projectData: Array<ProjectType> = [
     demo: "https://bonesga.me/",
   },
   {
-    image: "/proj/packrip.png",
-    screenshot: "/proj/screenshot/packrip.png",
+    image: basePath + "/proj/packrip.png",
+    screenshot: basePath + "/proj/screenshot/packrip.png",
     title: "Pokémon TCG Booster Pack Simulator",
     short: 'packrip',
     description: <span>
@@ -85,8 +87,8 @@ export const projectData: Array<ProjectType> = [
     github: "https://github.com/zsd7200/packrip",
   },
   {
-    image: "/proj/viewarr.png",
-    screenshot: "/proj/screenshot/viewarr.png",
+    image: basePath + "/proj/viewarr.png",
+    screenshot: basePath + "/proj/screenshot/viewarr.png",
     title: "Viewarr",
     short: 'view',
     description: <span>
@@ -98,8 +100,8 @@ export const projectData: Array<ProjectType> = [
     github: "https://github.com/zsd7200/viewarr",
   },
   {
-    image: "/proj/dbz.png",
-    screenshot: "/proj/screenshot/dbz.png",
+    image: basePath + "/proj/dbz.png",
+    screenshot: basePath + "/proj/screenshot/dbz.png",
     title: "Dragon Ball Audio VisualiZer",
     short: 'dbz',
     description: <span>
