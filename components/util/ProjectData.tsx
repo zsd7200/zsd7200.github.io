@@ -152,7 +152,7 @@ export const projectData: Array<ProjectType> = [
       Audio frequencies are displayed using HTML5 canvas in conjunction with an audio context object.
       <br />
       Built using JavaScript, Bootstrap, and HTML/CSS.
-      Team project with <a className="underline transition text-lime-600 hover:text-lime-700" href="https://github.com/tam8217">Tristan Marshall</a>.
+      Team project with <a className="underline transition text-lime-600 hover:text-lime-700" href="https://github.com/tam8217">Iseult Marshall</a>.
     </span>,
     github: "https://github.com/zsd7200/IGME330-Project1",
   },
