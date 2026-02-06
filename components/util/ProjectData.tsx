@@ -30,6 +30,34 @@ export const projectData: Array<ProjectType> = [
     demo: "https://cardle.wtf/",
   },
   {
+    image: basePath + "/proj/ratbase.png",
+    screenshot: basePath + "/proj/screenshot/ratbase.png",
+    title: "Ratbase",
+    short: 'rat',
+    description: <span>
+      A Discord economy bot with minigames, stocks, trading, and more. Designed to be run as a Docker container and can be
+      modified using JSON configuration files. Stores information in a MongoDB database and uses Decimal.js to manipulate large 
+      numbers and allow for Decimal128 numbers to be reached.
+      <br />
+      Built using discord.js and TypeScript.
+    </span>,
+    github: "https://github.com/zsd7200/ratbase",
+  },
+  {
+    image: basePath + "/proj/plza.png",
+    screenshot: basePath + "/proj/screenshot/plza.jpeg",
+    title: "Pokémon Legends: Z-A Shiny Tool",
+    short: 'plza',
+    description: <span>
+      A fork of <a href="https://github.com/ironandstee1/swemu-plus-plus">swemu-plus-plus</a> by ironandstee1 to shiny hunt using 
+      the fast-travel method and different macros in Pokémon Legends: Z-A. Uses a ATMega32U4-based Arduino board and a 3D printed 
+      5x5 button matrix to send inputs to a Nintendo Switch (2) console.
+      <br />
+      Built using C++ for Arduino.
+    </span>,
+    github: "https://github.com/zsd7200/plza-shiny-tool",
+  },
+  {
     image: basePath + "/proj/rcon.png",
     screenshot: basePath + "/proj/screenshot/rcon.png",
     title: "RCON Web GUI",
@@ -44,19 +72,19 @@ export const projectData: Array<ProjectType> = [
     github: "https://github.com/zsd7200/rcon",
   },
   {
-    image: basePath + "/proj/whosthat.png",
-    screenshot: basePath + "/proj/screenshot/whosthat.png",
-    title: "Who's that Pocket Monster?",
-    short: 'who',
+    image: basePath + "/proj/dond.png",
+    screenshot: basePath + "/proj/screenshot/dond.png",
+    title: "Deal or No Deal",
+    short: 'dond',
     description: <span>
-      A <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Who%27s_That_Pok%C3%A9mon%3F">&quot;Who&apos;s that Pokémon?&quot;</a> webgame. 
-      Pokémon images taken from <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a> using <a className="underline transition text-lime-600 hover:text-lime-700" href="https://pypi.org/project/ImageScraper/">ImageScraper</a> and
-      manipulated using either Canvas (if on desktop) or CSS image filters (if on mobile). 
-      <br/>
-      Built using Node.js, JavaScript with Babel and Gulp, and HTML/CSS with Handlebars 
-      and SASS.</span>,
-    github: "https://github.com/zsd7200/whosthatpocketmonster",
-    demo: "https://whosthatpocket.monster/",
+      A <a href="https://en.wikipedia.org/wiki/Deal_or_No_Deal_(American_game_show)">Deal or No Deal</a> web game built with a 
+      modern framework. Uses game logic from NBC&apos;s Deal or No Deal flash game from 2008 to determine banker offers (credit to 
+      <a href="https://www.davegentile.com/stuff/Deal_or_no_deal.html">Dave Gentile and Kevin Huculak</a>).
+      <br />
+      Built using React/Next and Tailwind.
+    </span>,
+    github: "https://github.com/zsd7200/dond",
+    demo: "https://dond-xi.vercel.app/",
   },
   {
     image: basePath + "/proj/bonesnode.png",
@@ -72,6 +100,21 @@ export const projectData: Array<ProjectType> = [
       </span>,
     github: "https://github.com/zsd7200/bonesnode",
     demo: "https://bonesga.me/",
+  },
+  {
+    image: basePath + "/proj/whosthat.png",
+    screenshot: basePath + "/proj/screenshot/whosthat.png",
+    title: "Who's that Pocket Monster?",
+    short: 'who',
+    description: <span>
+      A <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Who%27s_That_Pok%C3%A9mon%3F">&quot;Who&apos;s that Pokémon?&quot;</a> webgame. 
+      Pokémon images taken from <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a> using <a className="underline transition text-lime-600 hover:text-lime-700" href="https://pypi.org/project/ImageScraper/">ImageScraper</a> and
+      manipulated using either Canvas (if on desktop) or CSS image filters (if on mobile). 
+      <br/>
+      Built using Node.js, JavaScript with Babel and Gulp, and HTML/CSS with Handlebars 
+      and SASS.</span>,
+    github: "https://github.com/zsd7200/whosthatpocketmonster",
+    demo: "https://whosthatpocket.monster/",
   },
   {
     image: basePath + "/proj/packrip.png",
