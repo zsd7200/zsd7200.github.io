@@ -49,7 +49,7 @@ export const projectData: Array<ProjectType> = [
     title: "Pokémon Legends: Z-A Shiny Tool",
     short: 'plza',
     description: <span>
-      A fork of <a href="https://github.com/ironandstee1/swemu-plus-plus">swemu-plus-plus</a> by ironandstee1 to shiny hunt using 
+      A fork of <a className="underline transition text-lime-600 hover:text-lime-700" href="https://github.com/ironandstee1/swemu-plus-plus">swemu-plus-plus</a> by ironandstee1 to shiny hunt using 
       the fast-travel method and different macros in Pokémon Legends: Z-A. Uses a ATMega32U4-based Arduino board and a 3D printed 
       5x5 button matrix to send inputs to a Nintendo Switch (2) console.
       <br />
@@ -72,14 +72,31 @@ export const projectData: Array<ProjectType> = [
     github: "https://github.com/zsd7200/rcon",
   },
   {
+    image: basePath + "/proj/anilist.png",
+    screenshot: basePath + "/proj/screenshot/anilist.png",
+    title: "Multicompare-AniList",
+    short: 'anilist',
+    description: <span>
+      A way to compare multiple <a className="underline transition text-lime-600 hover:text-lime-700" href="https://anilist.co/">AniList</a> users&apos;
+      lists at once. Connects to the AniList GraphQL API to grab user data, then compares the data to all users passed in and provides results for matching 
+      entries with a grid.
+      <br />
+      Built using React/Next and Tailwind.
+      <br />
+      Team project with <a className="underline transition text-lime-600 hover:text-lime-700" href="https://github.com/tam8217">Iseult Marshall</a>.
+    </span>,
+    github: "https://github.com/zsd7200/multicompare-anilist",
+    demo: "https://multicompare-anilist.vercel.app/",
+  },
+  {
     image: basePath + "/proj/dond.png",
     screenshot: basePath + "/proj/screenshot/dond.png",
     title: "Deal or No Deal",
     short: 'dond',
     description: <span>
-      A <a href="https://en.wikipedia.org/wiki/Deal_or_No_Deal_(American_game_show)">Deal or No Deal</a> web game built with a 
-      modern framework. Uses game logic from NBC&apos;s Deal or No Deal flash game from 2008 to determine banker offers (credit to 
-      <a href="https://www.davegentile.com/stuff/Deal_or_no_deal.html">Dave Gentile and Kevin Huculak</a>).
+      A <a className="underline transition text-lime-600 hover:text-lime-700" href="https://en.wikipedia.org/wiki/Deal_or_No_Deal_(American_game_show)">Deal or No Deal</a> web game built with a 
+      modern framework. Uses game logic from NBC&apos;s Deal or No Deal flash game from 2008 to determine banker offers (credit 
+      to <a className="underline transition text-lime-600 hover:text-lime-700" href="https://www.davegentile.com/stuff/Deal_or_no_deal.html">Dave Gentile and Kevin Huculak</a>).
       <br />
       Built using React/Next and Tailwind.
     </span>,
@@ -110,7 +127,7 @@ export const projectData: Array<ProjectType> = [
       A <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Who%27s_That_Pok%C3%A9mon%3F">&quot;Who&apos;s that Pokémon?&quot;</a> webgame. 
       Pokémon images taken from <a className="underline transition text-lime-600 hover:text-lime-700" href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a> using <a className="underline transition text-lime-600 hover:text-lime-700" href="https://pypi.org/project/ImageScraper/">ImageScraper</a> and
       manipulated using either Canvas (if on desktop) or CSS image filters (if on mobile). 
-      <br/>
+      <br />
       Built using Node.js, JavaScript with Babel and Gulp, and HTML/CSS with Handlebars 
       and SASS.</span>,
     github: "https://github.com/zsd7200/whosthatpocketmonster",
@@ -152,6 +169,7 @@ export const projectData: Array<ProjectType> = [
       Audio frequencies are displayed using HTML5 canvas in conjunction with an audio context object.
       <br />
       Built using JavaScript, Bootstrap, and HTML/CSS.
+      <br />
       Team project with <a className="underline transition text-lime-600 hover:text-lime-700" href="https://github.com/tam8217">Iseult Marshall</a>.
     </span>,
     github: "https://github.com/zsd7200/IGME330-Project1",
